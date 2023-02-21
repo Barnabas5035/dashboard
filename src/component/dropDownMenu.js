@@ -12,7 +12,6 @@ import { FiMail } from 'react-icons/fi'
 export const sidebarMenu = [
   {
     title: 'Accommodation',
-    path: '/accommodation',
     icon: <FaThLarge />,
     iconClosed: <BiCaretUp />,
     iconOpened: <FaCaretDown />,
@@ -31,14 +30,13 @@ export const sidebarMenu = [
   },
   {
     title: 'Order',
-    path: '/orders',
     icon: <FaShoppingCart />,
     iconClosed: <BiCaretUp />,
     iconOpened: <FaCaretDown />,
     SubNav: [
       {
         title: 'Items1',
-        path: '/orders/Item1',
+        path: '/orders/Items1',
         icon: <FaCreativeCommons />,
       },
       {

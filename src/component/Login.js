@@ -1,8 +1,11 @@
 import React from 'react'
+import MasterPage from './MainPage/MasterPage'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <MasterPage>
+      <h3 className='home'>login</h3>
+    </MasterPage>
   )
 }
 

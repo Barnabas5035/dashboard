@@ -1,11 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+
+import MasterPage from './MainPage/MasterPage'
 const Order = () => {
   return (
-    <div className='home'>
-      <h2>Order </h2>
+    <MasterPage>
+      <h3 className='home'>this is my order</h3>
       <Outlet />
-    </div>
+    </MasterPage>
   )
 }
 

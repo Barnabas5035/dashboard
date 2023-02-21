@@ -7,7 +7,7 @@ import { FiSettings, FiLogIn } from 'react-icons/fi'
 
 import { BsFillPersonFill } from 'react-icons/bs'
 
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -73,7 +73,7 @@ const Sidebar = () => {
         </div>
 
         <div className='navbar-nav mt-2'>
-          <Link to='/dashboard' className='nav-link  text-dark ms-2 '>
+          <Link to={'/dashboard'} className='nav-link  text-dark ms-2 '>
             <FaThLarge className='link icons' />
             <span className='nav-items ms-2'>Dashboard</span>
           </Link>
@@ -86,7 +86,7 @@ const Sidebar = () => {
             })}
           </div>
           <div className='settings '>
-            <Link to='/setting' className='nav-link text-dark ms-2'>
+            <Link to={'/setting'} className='nav-link text-dark ms-2'>
               <FiSettings />
               <span className='nav-items ms-2'>Settings</span>
             </Link>
@@ -97,6 +97,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   )
 }

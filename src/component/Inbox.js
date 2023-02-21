@@ -1,12 +1,11 @@
 import React from 'react'
 import MasterPage from './MainPage/MasterPage'
-
-const Compose = () => {
+const Inbox = () => {
   return (
     <MasterPage>
-      <h3 className='home'>compose</h3>
+      <h3 className='home'>inbox page</h3>
     </MasterPage>
   )
 }
 
-export default Compose
+export default Inbox

@@ -1,10 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import MasterPage from './MainPage/MasterPage'
 
 const Dashboard = () => {
   return (
-    <div>
+    <MasterPage>
       <h3 className='home'>hello word</h3>
-    </div>
+      <Outlet />
+    </MasterPage>
   )
 }
 
