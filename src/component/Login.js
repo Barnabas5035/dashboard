@@ -38,50 +38,51 @@ const Login = () => {
       {/* sidebar navigation */}
       <div>
         {success ? (
-          <div
-            className='offcanvas offcanvas-start sidebar-nav mt-3 bg-light'
-            tabindex='-1'
-            id='offcanvasExample'
-            aria-labelledby='offcanvasExampleLabel'
-          >
-            <div className='offcanvas-header '>
-              <div to='/' className=' nav-link text-dark '>
-                <img
-                  src='./logo512.png'
-                  alt='pic'
-                  className='images-logo mb-2 ms-4'
-                />
-                <span className='nav-item  fw-bold text-uppercase'>
-                  blogwebsite
-                </span>
-              </div>
-            </div>
+         <></>
+//           <div
+//             className='offcanvas offcanvas-start sidebar-nav mt-3 bg-light'
+//             tabindex='-1'
+//             id='offcanvasExample'
+//             aria-labelledby='offcanvasExampleLabel'
+//           >
+//             <div className='offcanvas-header '>
+//               <div to='/' className=' nav-link text-dark '>
+//                 <img
+//                   src='./logo512.png'
+//                   alt='pic'
+//                   className='images-logo mb-2 ms-4'
+//                 />
+//                 <span className='nav-item  fw-bold text-uppercase'>
+//                   blogwebsite
+//                 </span>
+//               </div>
+//             </div>
 
-            <div className='navbar-nav mt-2'>
-              <Link to={'/dashboard'} className='nav-link  text-dark ms-2 '>
-                <FaThLarge className='link icons' />
-                <span className='nav-items ms-2'>Dashboard</span>
-              </Link>
+//             <div className='navbar-nav mt-2'>
+//               <Link to={'/dashboard'} className='nav-link  text-dark ms-2 '>
+//                 <FaThLarge className='link icons' />
+//                 <span className='nav-items ms-2'>Dashboard</span>
+//               </Link>
 
-              {/* dropdowm menus bar on the Dashboard */}
+//               {/* dropdowm menus bar on the Dashboard */}
 
-              <div>
-                {sidebarMenu.map((item, index) => {
-                  return <SubMenu item={item} key={index} />
-                })}
-              </div>
-              <div className='settings '>
-                <Link to={'/setting'} className='nav-link text-dark ms-2'>
-                  <FiSettings />
-                  <span className='nav-items ms-2'>Settings</span>
-                </Link>
-                <Link to={'/login'} className='nav-link text-dark ms-2'>
-                  <FiLogIn />
-                  <span className='nav-items ms-2'>Login</span>
-                </Link>
-              </div>
-            </div>
-          </div>
+//               <div>
+//                 {sidebarMenu.map((item, index) => {
+//                   return <SubMenu item={item} key={index} />
+//                 })}
+//               </div>
+//               <div className='settings '>
+//                 <Link to={'/setting'} className='nav-link text-dark ms-2'>
+//                   <FiSettings />
+//                   <span className='nav-items ms-2'>Settings</span>
+//                 </Link>
+//                 <Link to={'/login'} className='nav-link text-dark ms-2'>
+//                   <FiLogIn />
+//                   <span className='nav-items ms-2'>Login</span>
+//                 </Link>
+//               </div>
+//             </div>
+//           </div>
         ) : (
           <section>
             <p
