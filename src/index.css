@@ -3,7 +3,9 @@
   --topnavHeight: 55px;
   --navwidth: 58px;
 }
-
+body {
+  background-color: white;
+}
 .home,
 .accomodation,
 .product {
@@ -56,4 +58,41 @@
 
   padding-left: 5px;
   margin-left: 4px;
+}
+h2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+input {
+  border: 1px solid;
+  border-radius: 1rem;
+}
+label {
+  margin-top: 20px;
+  font-size: small;
+}
+.signBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  background-color: blue;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 5px;
+  border: 2px solid;
+  border-radius: 2rem;
 }
