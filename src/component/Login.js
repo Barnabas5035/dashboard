@@ -90,6 +90,12 @@ const Login = () => {
               aria-live='assertive'
             >
               {errMsg}
+               <Marquee
+                className='display-9 text-center mt-4'
+                direction='alternative'
+              >
+                You need to sign up with your username and passWord first
+              </Marquee>
               <h2>sign in</h2>
             </p>
             <form className='form' onSubmit={handleSubmit}>
