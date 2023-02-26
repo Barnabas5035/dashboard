@@ -1,17 +1,12 @@
 import React from 'react'
-import { sidebarMenu } from '../component/dropDownMenu'
-import SubMenu from './SubMenu'
-
-import { FaThLarge } from 'react-icons/fa'
-import { FiSettings, FiLogIn } from 'react-icons/fi'
 
 import { BsFillPersonFill } from 'react-icons/bs'
 
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div className='space-toggle sticky-top '>
+    <div className='space-toggle sticky-top  '>
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark '>
         <div className='container-fluid '>
           {/* my navbar toggle buttion */}
@@ -44,62 +39,15 @@ const Sidebar = () => {
             </div>
           </form>
 
-          <button type='button' class='btn btn-dark'>
+          <Link to={'/login'} className='nav-link text-white '>
             <BsFillPersonFill />
-            <span className='nav-items ms-2'>Login</span>
-          </button>
+            <span className='nav-items '>Login</span>
+          </Link>
         </div>
       </nav>
-
-      {/* sidebar navigation */}
-
-      <div
-        className='offcanvas offcanvas-start sidebar-nav mt-3 bg-light'
-        tabindex='-1'
-        id='offcanvasExample'
-        aria-labelledby='offcanvasExampleLabel'
-      >
-        <div className='offcanvas-header '>
-          <div to='/' className=' nav-link text-dark '>
-            <img
-              src='./photo/images (5).jpg'
-              alt='pic'
-              className='images-logo mb-2 ms-4'
-            />
-            <span className='nav-item  fw-bold text-uppercase'>
-              blogwebsite
-            </span>
-          </div>
-        </div>
-
-        <div className='navbar-nav mt-2'>
-          <Link to={'/dashboard'} className='nav-link  text-dark ms-2 '>
-            <FaThLarge className='link icons' />
-            <span className='nav-items ms-2'>Dashboard</span>
-          </Link>
-
-          {/* dropdowm menus bar on the Dashboard */}
-
-          <div>
-            {sidebarMenu.map((item, index) => {
-              return <SubMenu item={item} key={index} />
-            })}
-          </div>
-          <div className='settings '>
-            <Link to={'/setting'} className='nav-link text-dark ms-2'>
-              <FiSettings />
-              <span className='nav-items ms-2'>Settings</span>
-            </Link>
-            <Link to={'/login'} className='nav-link text-dark ms-2'>
-              <FiLogIn />
-              <span className='nav-items ms-2'>Login</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <Outlet />
     </div>
   )
 }
 
 export default Sidebar
+
